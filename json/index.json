@@ -20,6 +20,15 @@
   ],
   "sites": [
     {
+      "key": "玩偶",
+      "name": "玩偶",
+      "type": 3,
+      "api": "csp_Wogg",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": {}
+    },
+    {
       "key": "NCat",
       "name": "\uD83D\uDE3C 网飞猫 | 影视",
       "type": 3,
@@ -901,5 +910,5 @@
     "cdnjs.hnfenxun.com",
     "cms.qdwght.com"
   ],
-  "wallpaper": "https://picsum.photos/1280/720/?blur=10"
+  "wallpaper": "https://bing.ee123.net/img/4k"
 }
