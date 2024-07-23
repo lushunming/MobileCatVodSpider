@@ -45,46 +45,46 @@ https://t.me/liveddjkbot
 
 ## jar脚本 (上面状态不稳定哦)
 ```shell
-https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/jar/custom_spider.jar
+https://mirror.ghproxy.com/https://github.com/lushunming/MobileCatVodSpider/blob/main/jar/custom_spider.jar
 ```
 
 # 点播接口专区
 
 > 直接使用接口 (正能量)
 ```shell
-https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/index.json
+https://mirror.ghproxy.com/https://github.com/lushunming/MobileCatVodSpider/blob/main/json/index.json
 ```
 
 > 纯18接口
 ```shell
-https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/index18.json
+https://mirror.ghproxy.com/https://github.com/lushunming/MobileCatVodSpider/blob/main/json/index18.json
 ```
 
 > jsdelivr 免费 CDN
 ```shell
-https://cdn.jsdelivr.net/gh/bizhangjie/CatVodSpider/json/index.json
+https://cdn.jsdelivr.net/gh/lushunming/MobileCatVodSpider/json/index.json
 ```
 
 # 直播接口专区
 
 > 虎牙一起看
 ```shell
-https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/hy.txt
+https://mirror.ghproxy.com/https://github.com/lushunming/MobileCatVodSpider/blob/main/json/hy.txt
 ```
 
 > 斗鱼一起看
 ```shell
-https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/dy.txt
+https://mirror.ghproxy.com/https://github.com/lushunming/MobileCatVodSpider/blob/main/json/dy.txt
 ```
 
 > 虎牙&斗鱼 一起看
 ```shell
-https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/zbyqk.txt
+https://mirror.ghproxy.com/https://github.com/lushunming/MobileCatVodSpider/blob/main/json/zbyqk.txt
 ```
 
 > 成年人爱看的那些![img.png](img.png)
 ```shell
-https://mirror.ghproxy.com/https://github.com/bizhangjie/CatVodSpider/blob/main/json/sjdy.txt
+https://mirror.ghproxy.com/https://github.com/lushunming/MobileCatVodSpider/blob/main/json/sjdy.txt
 ```
 
 > 韩国熊猫tv 需科学
