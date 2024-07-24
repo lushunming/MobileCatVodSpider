@@ -1,5 +1,5 @@
 {
-  "spider": "https://mirror.ghproxy.com/https://github.com/lushunming/MobileCatVodSpider/blob/main/jar/custom_spider.jar;md5;d485b279c81c4ed1531aee904545652f",
+  "spider": "https://mirror.ghproxy.com/https://github.com/lushunming/MobileCatVodSpider/blob/main/jar/custom_spider.jar;md5;e7ccdde94d39e3cb524371cf6f8bc4dc",
   "lives": [
     {
       "name": "直播ipv6",
