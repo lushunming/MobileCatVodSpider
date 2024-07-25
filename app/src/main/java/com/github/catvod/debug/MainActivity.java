@@ -79,7 +79,7 @@ public class MainActivity extends Activity {
     public void categoryContent(){
 
         try {
-            Logger.t("categoryContent").d(spider.categoryContent("/list/1.html", "1", true, new HashMap<>()));
+            Logger.t("categoryContent").d(spider.categoryContent("1", "1", true, new HashMap<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }

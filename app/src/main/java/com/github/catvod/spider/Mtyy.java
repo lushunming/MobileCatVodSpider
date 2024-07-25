@@ -36,7 +36,8 @@ public class Mtyy extends Spider {
 
     private Map<String, String> getHeader() {
         Map<String, String> header = new HashMap<>();
-        header.put("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36");
+        header.put("User-Agent",Util.CHROME);
+        header.put("Host", siteUrl.replace("https://",""));
         return header;
     }
 
@@ -76,7 +77,7 @@ public class Mtyy extends Spider {
         List<Vod> list = new ArrayList<>();
         String target = siteUrl + "/vodtype/" + tid + "-" + pg + ".html";
         //String filters = extend.get("filters");
-        String html = OkHttp.string(target);
+        String html = OkHttp.string(target,getHeader());
         Document doc = Jsoup.parse(html);
         getVodList(doc, list);
         String total = "" + Integer.MAX_VALUE;
