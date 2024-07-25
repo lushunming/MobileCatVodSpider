@@ -8,6 +8,7 @@ import com.github.catvod.R;
 import com.github.catvod.crawler.Spider;
 import com.github.catvod.spider.Init;
 import com.github.catvod.spider.J91;
+import com.github.catvod.spider.Mtyy;
 import com.github.catvod.spider.PanSearch;
 import com.github.catvod.spider.PanSou;
 import com.github.catvod.spider.RouVideo;
@@ -52,7 +53,7 @@ public class MainActivity extends Activity {
     private void initSpider() {
         try {
             Init.init(getApplicationContext());
-            spider = new Zxzj();
+            spider = new Mtyy();
             spider.init(this, "");
         } catch (Throwable e) {
             e.printStackTrace();
