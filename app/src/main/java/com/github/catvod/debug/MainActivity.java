@@ -8,9 +8,12 @@ import com.github.catvod.R;
 import com.github.catvod.crawler.Spider;
 import com.github.catvod.spider.Init;
 import com.github.catvod.spider.J91;
+import com.github.catvod.spider.PanSearch;
+import com.github.catvod.spider.PanSou;
 import com.github.catvod.spider.RouVideo;
 import com.github.catvod.spider.Wogg;
 import com.github.catvod.spider.XVideos;
+import com.github.catvod.spider.Zxzj;
 import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.Logger;
 
@@ -49,7 +52,7 @@ public class MainActivity extends Activity {
     private void initSpider() {
         try {
             Init.init(getApplicationContext());
-            spider = new Wogg();
+            spider = new Zxzj();
             spider.init(this, "");
         } catch (Throwable e) {
             e.printStackTrace();
@@ -75,7 +78,7 @@ public class MainActivity extends Activity {
     public void categoryContent(){
 
         try {
-            Logger.t("categoryContent").d(spider.categoryContent("latest", "1", true, new HashMap<>()));
+            Logger.t("categoryContent").d(spider.categoryContent("/list/1.html", "1", true, new HashMap<>()));
         } catch (Throwable e) {
             e.printStackTrace();
         }

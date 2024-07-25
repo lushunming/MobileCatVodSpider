@@ -8,10 +8,13 @@ import android.text.TextUtils;
 
 import com.github.catvod.net.OkHttp;
 import com.github.catvod.spider.Proxy;
+import com.google.gson.Gson;
 
+import org.bouncycastle.util.encoders.UrlBase64;
 import org.json.JSONObject;
 
 import java.net.URLEncoder;
+import java.nio.charset.Charset;
 import java.util.Locale;
 import java.util.Map;
 
@@ -21,6 +24,10 @@ import okhttp3.Response;
 public class ProxyVideo {
 
     private static final String GO_SERVER = "http://127.0.0.1:7777/";
+
+    public static String buildCommonProxyUrl(String url, Map<String, String> headers) {
+        return Proxy.getUrl() + "?do=proxy&url=" + UrlBase64.encode(url.getBytes(Charset.defaultCharset())) + "&header=" + UrlBase64.encode((new Gson().toJson(headers)).getBytes(Charset.defaultCharset()));
+    }
 
     public static void go() {
         boolean close = OkHttp.string(GO_SERVER).isEmpty();
@@ -51,7 +58,8 @@ public class ProxyVideo {
         long contentLength = hContentLength != null ? Long.parseLong(hContentLength) : 0;
         if (contentDisposition != null) contentType = getMimeType(contentDisposition);
         NanoHTTPD.Response resp = newFixedLengthResponse(Status.PARTIAL_CONTENT, contentType, response.body().byteStream(), contentLength);
-        for (String key : response.headers().names()) resp.addHeader(key, response.headers().get(key));
+        for (String key : response.headers().names())
+            resp.addHeader(key, response.headers().get(key));
         return resp;
     }
 
